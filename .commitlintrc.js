@@ -16,7 +16,7 @@ module.exports = {
     'subject-min-length': [2, 'always', 10],
     'scope-enum': [2, 'always', []],
     'scope-case': [2, 'always', 'lower-case'],
-    'scope-empty': [2, 'never'],
+    'scope-empty': [0, 'never'],
     'scope-max-length': [2, 'always', 50],
     'scope-min-length': [2, 'always', 3],
     'type-enum': [
@@ -32,9 +32,7 @@ module.exports = {
         'perf',
         'refactor',
         'revert',
-        'style',
         'test',
-        'stories',
       ],
     ],
     'type-case': [2, 'always', 'lower-case'],
