@@ -1,3 +1,3 @@
-const testMessage = 'TEST1';
+const testMessage = 'TEST2';
 
 export { testMessage };
