@@ -15,7 +15,8 @@
     "build": "rimraf dist && mkdirp dist && rollup -c",
     "lint": "eslint src/**/**.* --rule \"{no-console: 2, no-alert:2, no-debugger: 2}\"",
     "prepare": "husky install",
-    "test": "jest"
+    "test": "jest",
+    "coverage": "cat ./coverage/lcov.info | coveralls"
   },
   "devDependencies": {
     "@commitlint/cli": "^12.1.4",
@@ -28,6 +29,7 @@
     "@semantic-release/release-notes-generator": "^9.0.3",
     "@types/jest": "^26.0.23",
     "commitlint": "^12.1.4",
+    "coveralls": "^3.1.0",
     "eslint": "^7.29.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
