@@ -1,6 +1,6 @@
 {
   "name": "reactive-steps",
-  "version": "0.0.0",
+  "version": "0.0.0-development",
   "description": "library for reactive steps development",
   "main": "dist/index.js",
   "module": "dist/index.umd.js",
@@ -16,7 +16,8 @@
     "lint": "eslint src/**/**.* --rule \"{no-console: 2, no-alert:2, no-debugger: 2}\"",
     "prepare": "husky install",
     "test": "jest",
-    "coverage": "cat ./coverage/lcov.info | coveralls"
+    "coverage": "cat ./coverage/lcov.info | coveralls",
+    "semantic-release": "semantic-release"
   },
   "devDependencies": {
     "@commitlint/cli": "^12.1.4",
@@ -72,5 +73,9 @@
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^4.28.0",
     "@typescript-eslint/parser": "^4.28.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ostashkin/reactive-steps.git"
   }
 }
