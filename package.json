@@ -1,6 +1,6 @@
 {
   "name": "reactive-steps",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "library for reactive steps development",
   "main": "dist/index.js",
   "module": "dist/index.umd.js",
