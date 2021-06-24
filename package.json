@@ -13,6 +13,7 @@
   "license": "MIT",
   "scripts": {
     "build": "rimraf dist && mkdirp dist && rollup -c",
+    "lint": "eslint src/**/**.* --rule \"{no-console: 2, no-alert:2, no-debugger: 2}\"",
     "prepare": "husky install",
     "test": "jest"
   },
@@ -27,6 +28,11 @@
     "@semantic-release/release-notes-generator": "^9.0.3",
     "@types/jest": "^26.0.23",
     "commitlint": "^12.1.4",
+    "eslint": "^7.29.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-prettier": "^3.4.0",
     "husky": "^6.0.0",
     "jest": "^27.0.5",
     "lint-staged": "^11.0.0",
@@ -60,5 +66,9 @@
       "@semantic-release/git",
       "@semantic-release/github"
     ]
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.28.0",
+    "@typescript-eslint/parser": "^4.28.0"
   }
 }
